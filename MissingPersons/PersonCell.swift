@@ -17,10 +17,10 @@ class PersonCell: UICollectionViewCell {
     
     func configureCell(person: Person) {
         self.person = person
-        
+        self.addOrRemoveBorder()
         if let url = NSURL(string: "\(baseURL)\(person.personImageUrl!)") {
             downloadImage(url)
-            person.isSelected = true
+            
             
         }
     }
@@ -45,17 +45,24 @@ class PersonCell: UICollectionViewCell {
         
     }
     
-    func setSelected() {
-        if person.isSelected == true {
-        personImage.clipsToBounds = false
-        personImage.layer.borderWidth = 2.0
-        personImage.layer.borderColor = UIColor.yellowColor().CGColor
-        
-        self.person.downloadFaceId()
-        } else if person.isSelected == false {
+    func addOrRemoveBorder() {
+        if self.person.isSelected == true {
+            personImage.clipsToBounds = false
+            personImage.layer.borderWidth = 2.0
+            personImage.layer.borderColor = UIColor.yellowColor().CGColor
+
+        } else {
             personImage.layer.borderColor = UIColor.whiteColor().CGColor
             personImage.layer.borderWidth = 0.0
+
         }
     }
     
+    func setSelected() {
+        self.person.isSelected = true
+        self.addOrRemoveBorder()
+        self.person.downloadFaceId()
+           
+        }
 }
+

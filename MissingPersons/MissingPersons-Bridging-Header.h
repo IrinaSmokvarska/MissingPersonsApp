@@ -3,3 +3,4 @@
 //
 
 #import <ProjectOxfordFace/MPOFaceSDK.h>
+#import  <MBProgressHUD/MBProgressHUD.h>

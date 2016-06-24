@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7B28C0E31D1D4EAD00969038 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28C0E21D1D4EAD00969038 /* Person.swift */; };
 		7B28C0E51D1D50A200969038 /* FaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28C0E41D1D50A200969038 /* FaceService.swift */; };
+		7B28C0E71D1D986700969038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B28C0E61D1D986700969038 /* Foundation.framework */; };
+		7B28C0E91D1D986F00969038 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B28C0E81D1D986F00969038 /* CoreGraphics.framework */; };
+		7B28C0EB1D1D987700969038 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B28C0EA1D1D987700969038 /* UIKit.framework */; };
 		7BFA9D6A1D1BEA2C00AAE68C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA9D691D1BEA2C00AAE68C /* AppDelegate.swift */; };
 		7BFA9D6C1D1BEA2C00AAE68C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFA9D6B1D1BEA2C00AAE68C /* ViewController.swift */; };
 		7BFA9D6F1D1BEA2C00AAE68C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BFA9D6D1D1BEA2C00AAE68C /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		566E302B581626977D9775B8 /* Pods-MissingPersons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MissingPersons.release.xcconfig"; path = "Pods/Target Support Files/Pods-MissingPersons/Pods-MissingPersons.release.xcconfig"; sourceTree = "<group>"; };
 		7B28C0E21D1D4EAD00969038 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7B28C0E41D1D50A200969038 /* FaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceService.swift; sourceTree = "<group>"; };
+		7B28C0E61D1D986700969038 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B28C0E81D1D986F00969038 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7B28C0EA1D1D987700969038 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7B96F5D11D1C653B009BA702 /* MissingPersons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissingPersons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC087451D1C72CA000E11A8 /* MissingPersons-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MissingPersons-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BFA9D691D1BEA2C00AAE68C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B28C0EB1D1D987700969038 /* UIKit.framework in Frameworks */,
+				7B28C0E91D1D986F00969038 /* CoreGraphics.framework in Frameworks */,
+				7B28C0E71D1D986700969038 /* Foundation.framework in Frameworks */,
 				8396EE68EEB1D735C66DBA68 /* Pods_MissingPersons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +98,9 @@
 		C49C0B5DA7897DBB8206454A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B28C0EA1D1D987700969038 /* UIKit.framework */,
+				7B28C0E81D1D986F00969038 /* CoreGraphics.framework */,
+				7B28C0E61D1D986700969038 /* Foundation.framework */,
 				C27A683E2577CBFD95CF4AAE /* Pods_MissingPersons.framework */,
 			);
 			name = Frameworks;

@@ -7,5 +7,6 @@ use_frameworks!
 
   # Pods for MissingPersons
 pod 'ProjectOxfordFace'
+pod ’MBProgressHUD', '~> 0.9.2'
 
 end

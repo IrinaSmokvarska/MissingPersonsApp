@@ -17,7 +17,7 @@ class Person {
     
     init(personImageUrl: String) {
         self.personImageUrl = personImageUrl
-        isSelected = false
+        self.isSelected = false
     }
     
     func downloadFaceId() {

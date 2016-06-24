@@ -8,6 +8,7 @@
 
 import UIKit
 import ProjectOxfordFace
+import MBProgressHUD
 
 let baseURL = "http://localhost:6069/img/"
 
@@ -96,6 +97,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             showErrorAlert()
         } else {
             if let myImg = selectedImg.image, let imgData = UIImageJPEGRepresentation(myImg, 0.8) {
+              
+                let loadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+                loadingNotification.mode = MBProgressHUDMode.Indeterminate
+                loadingNotification.labelText = "Loading"
                 
                 FaceService.instance.client.detectWithData(imgData, returnFaceId: true, returnFaceLandmarks: false, returnFaceAttributes: nil, completionBlock: { (faces:[MPOFace]!, err: NSError!)  in
                     
@@ -117,11 +122,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                                         self.textLabela.text = "False"
                                     }
                                 }else {
+                                    
                                     print(err.debugDescription)
                                 }
+                                MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
                             })
+                            
                         }
+                        MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
+                        
                     }
+                    MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
                 })
             }
         }
